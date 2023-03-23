@@ -17,8 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
 Route::get('/index.html', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Route::get('/clinic.html', [App\Http\Controllers\HomeController::class, 'clinic'])->name('clinic');
 Route::get('/service.html', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
